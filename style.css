@@ -1,0 +1,485 @@
+@font-face {
+    font-family: 'PFDinComProRegular';
+    src: url('fonts/pfdintextcomppro-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'WidGuru';
+    src: url('fonts/widguru.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-shadow: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body{
+    background-color: #000;
+    background-image: url(images/bg.png);
+    background-position: center 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.header{
+    padding: 28px 0;
+}
+
+.top__menu{
+    overflow: hidden;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.top__menu li{
+    float: left;
+    margin-right: 22px;
+}
+
+.top__menu li:last-child{
+    margin-right: 0;
+}
+
+.top__menu li a{
+    font-size: 24px;
+    color: #fff;
+    font-family: 'WidGuru', Arial;
+}
+
+.top__menu li.active a{
+    color: #ecac34;
+}
+
+.social{
+    overflow: hidden;
+}
+
+.social li{
+    float: left;
+    margin-right: 25px;
+}
+
+.social li:last-child{
+    margin-right: 0;
+}
+
+.big__logo{
+    width: 294px;
+    margin: 0 auto;
+}
+
+.screen1{
+    border-top: 1px solid #5a5c5e;
+    padding-top: 80px;
+}
+
+.hashtag{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 72px;
+    font-family: 'WidGuru', Arial;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hashtag span{
+    color: #ecac34;
+}
+
+.products{
+    overflow: hidden;
+    width: 780px;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+
+.products li{
+    float: left;
+    padding: 0 40px;
+    font-size: 65px;
+    color: #ecac34;
+    text-transform: uppercase;
+    font-family: 'WidGuru', Arial;
+    background-image: url(images/roket.png);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+}
+
+.products li:first-child{
+    padding-left: 0;
+}
+
+.products li:last-child{
+    padding-right: 0;
+    background: none;
+}
+
+.cells{
+    background-color: #fff;
+    padding: 2px;
+    margin-top: 38px;
+}
+
+.cells__row{
+    overflow: hidden;
+}
+
+.cells__item{
+    float: left;
+    width: 33.2%;
+    position: relative;
+    margin-right: 2px;
+}
+
+.cells__item img{
+    width: 100%;
+}
+
+.cells__row .cells__item:last-child{
+    margin-right: 0;
+}
+
+.cells__item__grad{
+    position: absolute;
+    z-index: 10;
+    bottom: 4px;
+    width: 100%;
+    height: 50%;
+    background-image: url(images/gradient.png);
+    background-size: cover;
+}
+
+.cells__item__grad img{
+    width: 100%;
+}
+
+.link__menu{
+    position: absolute;
+    bottom: 18px;
+    z-index: 15;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'WidGuru', Arial;
+    color: #fff;
+    background-image: url(images/treugolnik.png);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    padding-right: 20px;
+    display: block;
+}
+
+.link__menu span{
+    color: #ecac33;
+}
+
+.link__menu:hover{
+    color: #fff;
+}
+
+.bg__gray{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.cells__item__text{
+    position: absolute;
+    bottom: 28px;
+    left: 0;
+    padding: 0 50px 0 37px;
+    z-index: 15;
+}
+
+.cells__item__text p{
+    color: #fff;
+    font-family: 'WidGuru', Arial;
+}
+
+.cells__item__text p:first-child{
+    font-size: 18px;
+}
+
+.cells__item__text p:last-child{
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.cells__item__rect{
+    margin-right: 2px;
+    float: left;
+    width: 33.2%;
+}
+
+.cells__item__rect img{
+    width: 100%;
+}
+
+.cells__item__map{
+    float: right;
+    width: 66.6%;
+    margin-bottom: 2px;
+}
+
+.maps{
+    height: 802px;
+    display: none;
+}
+
+#map{
+    display: block;
+}
+
+.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next{
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+}
+
+.owl-carousel .owl-nav .owl-prev{
+    left: 17px;
+}
+
+.owl-carousel .owl-nav .owl-next{
+    right: 17px;
+}
+
+.owl-carousel .owl-nav .owl-prev.disabled, .owl-carousel .owl-nav .owl-next.disabled{
+    display: none;
+}
+
+#slider__addr{
+    margin-top: 22px;
+}
+
+.new__addr{
+    position: relative;
+}
+
+.new__roket{
+    position: absolute;
+    top: 22px;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'WidGuru', Arial;
+    z-index: 15;
+}
+
+.new__roket span{
+    color: #ecac33;
+}
+
+.new__addr__text{
+    position: absolute;
+    bottom: 24px;
+    z-index: 16;
+    padding: 0 33px;
+}
+
+.new__addr__text__wrap{
+    background-image: url(images/point.png);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    padding-left: 39px;
+}
+
+.new__addr__text p{
+    color: #fff;
+}
+
+.new__addr__text p:first-child{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'WidGuru', Arial;
+}
+
+.new__addr__text p:first-child span{
+    color: #ecac34;
+}
+
+.new__addr__text p:last-child{
+    font-size: 18px;
+    font-family: 'PFDinComProRegular';
+}
+
+.cells__item__addr{
+    cursor: pointer;
+}
+
+.inst{
+    padding: 79px 0 70px 0;
+    border-bottom: 1px solid #424242;
+}
+
+.social1{
+    overflow: hidden;
+    position: absolute;
+}
+
+.social1 li{
+    float: left;
+    margin-right: 13px;
+}
+
+.social1 li:last-child{
+    margin-right: 0;
+}
+
+.inst__wrap{
+    position: relative;
+}
+
+.footer{
+    padding: 20px 0;
+}
+
+.contacts{
+    text-align: center;
+}
+
+.contacts a{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'PFDinComProRegular';
+}
+
+.contacts a:first-child{
+    padding-right: 12px;
+}
+
+.copyright{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'PFDinComProRegular';
+}
+
+.seo{
+    padding-top: 46px;
+}
+
+.seo__wrap{
+    padding: 0 180px;
+}
+
+.seo__wrap h1{
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: 'PFDinComProRegular';
+    font-weight: bold;
+}
+
+.seo__wrap p{
+    line-height: 1.5;
+    font-size: 18px;
+    color: #c2c2c2;
+    font-family: 'PFDinComProRegular';
+    margin-top: 30px;
+}
+
+.cells__item__black{
+    padding: 24px;
+    background-color: #000;
+    min-height: 389px;
+}
+
+.cells__item__black__head{
+    text-transform: uppercase;
+    color: #ecac34;
+    font-size: 24px;
+    font-family: 'WidGuru', Arial;
+    margin-bottom: 12px;
+}
+
+.cells__item__black__text p{
+    font-size: 24px;
+    color: #fff;
+    font-family: 'PFDinComProRegular';
+    margin-bottom: 15px;
+}
+
+.cells__item__black__text p:last-child{
+    margin-bottom: 0;
+}
+
+.cells__item__black__text p a{
+    color: #ecac34;
+}
+
+.cells__item__desc{
+    position: absolute;
+    z-index: 17;
+    bottom: 28px;
+    padding: 0 48px;
+}
+
+.cells__item__desc p:nth-child(1){
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'WidGuru', Arial;
+    font-size: 24px;
+}
+
+.cells__item__desc p:nth-child(1) span{
+    color: #ecac33;
+}
+
+.cells__item__desc p:nth-child(2){
+    color: #fff;
+    font-size: 18px;
+    font-family: 'PFDinComProRegular';
+}
